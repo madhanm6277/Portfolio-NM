@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PortFolio</title>
+
+    <!-- BootStrap CDN -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+
+    <!-- JS -->
+    <script src="./src/js/bootstrap.min.js" type="text/javascript"></script>
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="./src/css/index.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+
+</head>
+
+<body class="w-100 h-100 bg-light position-relative" oncontextmenu=false>
+
+    <!-- Theme toggle -->
+    <button class="btn btn-dark m-3 theme-btn" onclick="loadDarkTheme()">
+        <img src="./assets/icons/moon.png" alt="" class="img-fluid theme-icon" width="32" height="32">
+    </button>
+
+    <section class="container-fluid w-100 h-100 py-4 d-flex justify-content-center align-items-start">
+        <div class="container profile-sec row d-flex justify-content-center align-items-center">
+            <div class="col-12 col-xl-3 text-center">
+                <img src="./assets/profile.jpg" alt="" class="img-fluid rounded-circle"
+                    style="width:18rem; height: 18rem;object-fit: cover;">
+            </div>
+            <div class=" col-12 col-xl-9">
+                <div class="user-detail mt-3 text-center">
+                    <h1 class="name h1 m-0 fw-bold text-uppercase">Madhan M
+                    </h1>
+                    <h6 class="role text-left h6 fw-normal text-secondary">Student</h6>
+                </div>
+                <div class="download-btn d-grid place-items-center">
+                    <button class="btn btn-warning text-dark" onclick="downloadResume('./resume.pdf', 'resume.pdf')">Download Resume</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <main class="container">
+
+
+        <section class="row py-2 w-100 h-100 d-flex justify-content-center align-items-start">
+            <div class="left-container col-12 col-xl-6 w-auto">
+                <div class="education mt-5 text-center">
+                    <h1 class="h4 mb-4 fw-bold text-uppercase">Education</h1>
+                    <div class="scl">
+                        <h5 class="h6 year fw-normal text-secondary">2019 - 2020 <br /> <span
+                                class="text-warning fw-bold">SSLC</span></h5>
+                        <h4 class="h6 text-uppercase">ghss, pammadhukulam, redhills.</h4>
+                    </div>
+                    <div class="scl py-2">
+                        <h5 class="h6 year fw-normal text-secondary">2022 - 2023 <br /> <span
+                                class="text-warning fw-bold">HSC</span></h5>
+                        <h4 class="h6 text-uppercase">ghss, pammadhukulam, redhills.</h4>
+                    </div>
+                    <div class="college py-2">
+                        <h5 class="h6 year fw-normal text-secondary">2023 - 2026 <br /> <span
+                                class="text-warning fw-bold">B.SC (Comp.Science)</span></h5>
+                        <h4 class="h6 text-uppercase">Veltech ranga sanku arts college, <br /> avadi.</h4>
+                    </div>
+                </div>
+                <div class="contact-me mt-5 text-center">
+                    <h1 class="h4 mb-4 fw-bold text-uppercase">Contact me</h1>
+                    <div class="contact d-flex justify-content-start align-items-center">
+                        <i class="fas fa-envelope text-warning m-2"></i>
+                        <h5 class="h6 fw-semibold">madh*****6.m@gmail.com</h5>
+                    </div>
+                    <div class="contact d-flex justify-content-start align-items-center">
+                        <i class="fas fa-phone text-warning m-2"></i>
+                        <h5 class="h6 fw-semibold">+91 938*****02</h5>
+                    </div>
+                    <div class="contact d-flex justify-content-start align-items-center">
+                        <i class="fab fa-linkedin text-info m-2"></i>
+                        <h5 class="h6 fw-semibold"><a class="text-warning text-decoration-none" href="https://www.linkedin.com/in/madhan-m-263b32253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">View Profile</a></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container col-12 col-xl-6 h-100" style="flex:1;">
+
+                <div class="skills">
+                    <h1 class="h4 mt-3 fw-bold text-uppercase text-center">Skills</h1>
+                    <ul class="row d-flex justify-content-center align-items-center">
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/java.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">Java<span class="mx-3 fw-normal text-danger h6">35%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:35%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/react.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">React JS<span class="mx-3 fw-normal text-danger h6">60%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:60%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/network.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">Networking<span class="mx-3 fw-normal text-danger h6">60%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:60%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/mysql.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">MySQL<span class="mx-3 fw-normal text-danger h6">45%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:45%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/python.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">Python<span class="mx-3 fw-normal text-danger h6">38%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:38%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/javascript.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">Javascript<span class="mx-3 fw-normal text-danger h6">53%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:53%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/kotlin.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">Kotlin<span class="mx-3 fw-normal text-danger h6">15%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:15%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/linux.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">Linux<span class="mx-3 fw-normal text-danger h6">78%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:78%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/github.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">Github<span class="mx-3 fw-normal text-danger h6">35%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:35%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-12 col-xl-6">
+                            <div class="skill-box d-flex justify-content-start align-items-center w-100">
+                                <img src="./assets/icons/mongoDB.png" alt="" style="object-fit: contain;"
+                                    class="img-fluid bg-light p-2 m-2" width="68">
+                                <div class="name_progression w-100">
+                                    <span class="h6 fw-bold text-dark skill-name">MongoDB<span class="mx-3 fw-normal text-danger h6">30%</span></span>
+                                    <div class="progress-bg w-100"
+                                        style="background:rgb(240, 240, 240);border-radius: 8px;overflow: hidden;">
+                                        <div class="progress-fg bg-warning" style="width:30%;height:8px;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="about-me">
+                        <h1 class="h4 fw-bold text-uppercase text-center">About Me</h1>
+                        <p class="h6 text-dark" style="text-align: justify;">
+                            I’m <b>Madhan</b>, an aspiring Java Full Stack Developer currently learning <b>Java, Spring Boot, React.js, and MongoDB</b>. I have a foundational understanding of <b>Data Structures and Algorithms (DSA)</b> and am actively working on improving my skills through hands-on projects.
+
+I am pursued a <b>Full Stack Development course</b> to deepen my expertise and gain real-world experience. My goal is to become a skilled developer and secure a role in a top product-based company.
+
+Beyond coding, I have a strong interest in <b>networking, operating systems, and Linux</b>, and I enjoy exploring new technologies to expand my knowledge.
+
+I’m always open to learning and collaborating—let’s connect and grow together!
+                        </p>
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+
+
+</body>
+
+</html>
