@@ -1,1 +1,84 @@
 
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.theme-btn {
+    position: fixed;
+    top:1rem;right:0rem;
+    z-index: 1000;
+
+}
+
+.skill-box {
+    transform: scale(0.9);
+    transition: all ease-in 250ms;
+}
+
+.skill-box:hover {
+    transform:scale(1);
+    transition: all ease-in 250ms;
+}
+
+.dark-theme {
+    color:white !important;
+    background: #1b211d !important;
+}
+.dark-theme p {
+    color:white !important;
+}
+.dark-theme span.skill-name {
+    color:white !important;
+}
+.dark-theme .right-container {
+    border-left:2px solid rgba(61, 61, 61, 0.726) !important;
+}
+
+@media only screen and (min-width:1200px) {
+ 
+    .container .user-detail {
+        justify-self:start;
+        text-align: left !important;
+        align-self: end !important;
+        height:100%;
+        /* background: #000; */
+        h1 {
+            font-size:4em !important;
+        }
+        h6 {
+            font-size:1.2rem !important;
+        }
+    }
+    
+    .right-container {
+        border-left:2px solid whitesmoke;
+    }
+
+    .education {
+        justify-self: start;
+        margin-top: 2.5rem;
+        text-align: left !important;
+
+        h1 {
+            text-align: left !important;
+        }
+    }
+    .contact-me {
+        justify-self: start;
+        margin-top:2.5rem;
+        
+        .contact, h1{
+            justify-content: start !important;
+            text-align: left !important;
+        }
+    }
+    .skills, .about-me {
+        margin-top: 2.5rem;
+        justify-self: start;
+        h1 {text-align: left !important;}
+    }
+}
